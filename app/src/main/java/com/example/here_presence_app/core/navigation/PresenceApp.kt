@@ -7,6 +7,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.here_presence_app.presentation.ui.splash.SplashScreen
 import com.example.here_presence_app.presentation.ui.login.LoginScreen
+//import com.example.here_presence_app.presentation.ui.professor.ProfHomeScreen
+import com.example.here_presence_app.presentation.ui.student.main.StudentScreen
 
 @Composable
 fun PresenceApp() {
@@ -21,6 +23,12 @@ fun PresenceApp() {
         }
         composable("login") {
             LoginScreen(navController)
+        }
+        //composable("prof_home") {
+        //    ProfHomeScreen()
+        //}
+        composable("student_home") {
+            StudentScreen()
         }
     }
 }
